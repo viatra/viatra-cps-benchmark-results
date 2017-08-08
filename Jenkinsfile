@@ -14,14 +14,14 @@ pipeline {
     stage('Update MONDO-SAM') {
       steps {
         sshagent(['24f0908d-7662-4e93-80cc-1143b7f92ff1']) {
-          sh "./scripts/dep-mondo-sam.sh"
+          sh "./reporting/scripts/dep-mondo-sam.sh"
         }
       }
     }
 
     stage('Report') {
       steps {
-        sh "./scripts/report.sh ${params.BENCHMARK_CONFIG} ${params.RESULT_ID}"
+        sh "./reporting/scripts/report.sh ${params.BENCHMARK_CONFIG} ${params.RESULT_ID}"
       }
     }
 
