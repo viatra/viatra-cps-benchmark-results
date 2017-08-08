@@ -24,7 +24,7 @@ pipeline {
         sh "./scripts/report.sh ${params.BENCHMARK_CONFIG} ${params.RESULT_ID}}"
       }
     }
-    
+
   }
 
 }
