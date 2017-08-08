@@ -21,7 +21,7 @@ pipeline {
 
     stage('Report') {
       steps {
-        sh "./scripts/report.sh ${params.BENCHMARK_CONFIG} ${params.RESULT_ID}}"
+        sh "./scripts/report.sh ${params.BENCHMARK_CONFIG} ${params.RESULT_ID}"
       }
     }
 
