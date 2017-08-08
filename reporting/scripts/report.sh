@@ -15,14 +15,14 @@ if [ $CPS_RESULT_ID = "latest" ]; then
   CPS_RESULT_ID=$(basename ${resultsInConfig[-1]})
 fi
 
-echo "Run reporting on $BENCHMARK_CONFIG/$CPS_RESULT_ID"
+echo "Run reporting on $CPS_BENCHMARK_CONFIG/$CPS_RESULT_ID"
 
-resultFile=${WORKSPACE}/$BENCHMARK_CONFIG/$CPS_RESULT_ID/results.csv
-configFile=${WORKSPACE}/$BENCHMARK_CONFIG/$CPS_RESULT_ID/config.json
+resultFile=${WORKSPACE}/$CPS_BENCHMARK_CONFIG/$CPS_RESULT_ID/results.csv
+configFile=${WORKSPACE}/$CPS_BENCHMARK_CONFIG/$CPS_RESULT_ID/config.json
 
-if [ -e configFile ]; then
+if [ ! -e configFile ]; then
   echo "Could not find specific config, using generic"
-  configFile=${WORKSPACE}/reporting/configs/$BENCHMARK_CONFIG/config.json
+  configFile=${WORKSPACE}/reporting/configs/$CPS_BENCHMARK_CONFIG/config.json
 fi
 
 rm -rf diagrams
