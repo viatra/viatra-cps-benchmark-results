@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "$( cd "$( dirname "$0" )" && pwd )/.."
+cd "$( cd "$( dirname "$0" )" && pwd )/../.."
 
 # Clone results repository if needed
 if [ -d "mondo-sam" ]; then

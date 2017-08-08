@@ -1,5 +1,5 @@
 #!/bin/bash
-cd "$( cd "$( dirname "$0" )" && pwd )/.."
+cd "$( cd "$( dirname "$0" )" && pwd )/../.."
 
 # First parameter: benchmark config name (folder inside scripts/configs)
 CPS_BENCHMARK_CONFIG=$1
