@@ -1,0 +1,374 @@
+[Sep/19 12:10:21] testrunner - 	
+Parameters:
+	SCENARIO:	M2M_ONLY
+	CASE:		STATISTICS_BASED
+	TOOL:		BATCH_VIATRA_QUERY_RETE-TEMPLATE
+	SCALE:		32
+	RUN INDEX:	2
+	
+
+[Sep/19 12:10:21] testrunner - ************ Start class init
+[Sep/19 12:10:22] testrunner - ************ Start instance init
+[Sep/19 12:10:22] testrunner - ************ Run test
+[Sep/19 12:10:22] StatisticsBasedCase - --> Scale = 1
+[Sep/19 12:10:22] StatisticsBasedCase - --> HostClass count = 2
+[Sep/19 12:10:22] StatisticsBasedCase - --> HostType count = 2
+[Sep/19 12:10:22] StatisticsBasedCase - --> HostInstance count = 26
+[Sep/19 12:10:22] StatisticsBasedCase - --> Host comm count = 5
+[Sep/19 12:10:22] StatisticsBasedCase - --> AppClass count = 34
+[Sep/19 12:10:22] token - com.incquerylabs.examples.cps.performance.tests.config.phases.EMFResourceInitializationPhase phase started
+[Sep/19 12:10:22] token - com.incquerylabs.examples.cps.performance.tests.config.phases.EMFResourceInitializationPhase phase finished:
+	Time: 73126447 ns
+	Memory: 10771640 bytes
+
+[Sep/19 12:10:22] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedGenerationPhase phase started
+[Sep/19 12:10:22] Generator - << Done CPSPhasePrepare phase in 240 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseSignalSet phase in 0 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseTypeStatisticsBasedGeneration phase in 46 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseInstanceGeneration phase in 7 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseHostCommunication phase in 2 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseApplicationAllocation phase in 30 ms >>
+[Sep/19 12:10:22] Generator - << Done CPSPhaseActionStatisticsBasedGeneration phase in 38 ms >>
+[Sep/19 12:10:23] CPSStats - ====================================================================
+[Sep/19 12:10:23] CPSStats - = CPS Stats: 
+[Sep/19 12:10:23] CPSStats - =   ApplicationTypes: 50
+[Sep/19 12:10:23] CPSStats - =   ApplicationInstances: 50
+[Sep/19 12:10:23] CPSStats - =   HostTypes: 2
+[Sep/19 12:10:23] CPSStats - =   HostInstances: 26
+[Sep/19 12:10:23] CPSStats - =   States: 69
+[Sep/19 12:10:23] CPSStats - =   Transitions: 176
+[Sep/19 12:10:23] CPSStats - =     Send: 88
+[Sep/19 12:10:23] CPSStats - =     Wait: 88
+[Sep/19 12:10:23] CPSStats - =     Without action: 0
+[Sep/19 12:10:23] CPSStats - =   Allocated AppInstances: 50
+[Sep/19 12:10:23] CPSStats - =   Connected HostsInstances: 56
+[Sep/19 12:10:23] CPSStats - =   EObjects: 396
+[Sep/19 12:10:23] CPSStats - =   EReferences: 801
+[Sep/19 12:10:23] CPSStats - =   Duplicate AppInstance IDs: 0
+[Sep/19 12:10:23] CPSStats - ====================================================================
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedGenerationPhase phase finished:
+	Time: 423747980 ns
+	Memory: 15283168 bytes
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.InitializationPhase phase started
+[Sep/19 12:10:23] eiq - Prepared queries on engine (62 ms)
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.InitializationPhase phase finished:
+	Time: 79088311 ns
+	Memory: 11039632 bytes
+	AverageMemory: 41419936
+	PeakMemory: 57526088
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:23] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:23] eiq - >>>Cleared model in: 0 ms
+>>>Host transformation: 2 ms
+>>>Application Instance transformation: 2 ms
+>>>State Machine transformation: 2 ms
+>>>State transformation: 3 ms
+>>>Transition transformation: 17 ms
+>>>Trigger transformation: 9 ms
+>>>Other perf: 5 ms
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 48346359 ns
+	Memory: 11525232 bytes
+	PeakMemory: 64372800
+	AverageMemory: 42897936
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 1467699 ns
+	Memory: 11334232 bytes
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:23] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:23] eiq - >>>Cleared model in: 8 ms
+>>>Host transformation: 1 ms
+>>>Application Instance transformation: 1 ms
+>>>State Machine transformation: 1 ms
+>>>State transformation: 2 ms
+>>>Transition transformation: 11 ms
+>>>Trigger transformation: 3 ms
+>>>Other perf: 4 ms
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 32084866 ns
+	Memory: 11358648 bytes
+	PeakMemory: 65022152
+	AverageMemory: 48916008
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 423595 ns
+	Memory: 11362720 bytes
+
+[Sep/19 12:10:23] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:24] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:24] eiq - >>>Cleared model in: 4 ms
+>>>Host transformation: 0 ms
+>>>Application Instance transformation: 1 ms
+>>>State Machine transformation: 1 ms
+>>>State transformation: 2 ms
+>>>Transition transformation: 9 ms
+>>>Trigger transformation: 3 ms
+>>>Other perf: 3 ms
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 25370060 ns
+	Memory: 11375216 bytes
+	PeakMemory: 32838352
+	AverageMemory: 32838352
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 301683 ns
+	Memory: 11379176 bytes
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:24] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:24] eiq - >>>Cleared model in: 3 ms
+>>>Host transformation: 0 ms
+>>>Application Instance transformation: 1 ms
+>>>State Machine transformation: 1 ms
+>>>State transformation: 2 ms
+>>>Transition transformation: 7 ms
+>>>Trigger transformation: 2 ms
+>>>Other perf: 3 ms
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 21583040 ns
+	Memory: 11390392 bytes
+	AverageMemory: 32854808
+	PeakMemory: 32854808
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 260238 ns
+	Memory: 11394456 bytes
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:24] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:24] eiq - >>>Cleared model in: 3 ms
+>>>Host transformation: 0 ms
+>>>Application Instance transformation: 1 ms
+>>>State Machine transformation: 1 ms
+>>>State transformation: 2 ms
+>>>Transition transformation: 7 ms
+>>>Trigger transformation: 2 ms
+>>>Other perf: 3 ms
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 20534319 ns
+	Memory: 11434176 bytes
+	PeakMemory: 32870112
+	AverageMemory: 32870112
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 250641 ns
+	Memory: 11438296 bytes
+
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:24] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly1_29537507296735616
+[Sep/19 12:10:24] eiq - >>>Cleared model in: 3 ms
+>>>Host transformation: 0 ms
+>>>Application Instance transformation: 1 ms
+>>>State Machine transformation: 1 ms
+>>>State transformation: 2 ms
+>>>Transition transformation: 7 ms
+>>>Trigger transformation: 2 ms
+>>>Other perf: 3 ms
+[Sep/19 12:10:24] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 19612400 ns
+	Memory: 11450536 bytes
+	AverageMemory: 32913928
+	PeakMemory: 32913928
+
+[Sep/19 12:10:24] testrunner - ************ Start instance clean
+[Sep/19 12:10:24] testrunner - ************ Start class clean
+[Sep/19 12:10:26] testrunner - ************ Start class init
+[Sep/19 12:10:27] testrunner - ************ Start instance init
+[Sep/19 12:10:27] testrunner - ************ Run test
+[Sep/19 12:10:27] StatisticsBasedCase - --> Scale = 32
+[Sep/19 12:10:27] StatisticsBasedCase - --> HostClass count = 33
+[Sep/19 12:10:27] StatisticsBasedCase - --> HostType count = 33
+[Sep/19 12:10:27] StatisticsBasedCase - --> HostInstance count = 832
+[Sep/19 12:10:27] StatisticsBasedCase - --> Host comm count = 191
+[Sep/19 12:10:27] StatisticsBasedCase - --> AppClass count = 1109
+[Sep/19 12:10:27] token - com.incquerylabs.examples.cps.performance.tests.config.phases.EMFResourceInitializationPhase phase started
+[Sep/19 12:10:27] token - com.incquerylabs.examples.cps.performance.tests.config.phases.EMFResourceInitializationPhase phase finished:
+	Time: 297966 ns
+	Memory: 9829376 bytes
+
+[Sep/19 12:10:27] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedGenerationPhase phase started
+[Sep/19 12:10:27] Generator - << Done CPSPhasePrepare phase in 18 ms >>
+[Sep/19 12:10:27] Generator - << Done CPSPhaseSignalSet phase in 0 ms >>
+[Sep/19 12:10:27] Generator - << Done CPSPhaseTypeStatisticsBasedGeneration phase in 150 ms >>
+[Sep/19 12:10:27] Generator - << Done CPSPhaseInstanceGeneration phase in 69 ms >>
+[Sep/19 12:10:29] Generator - << Done CPSPhaseHostCommunication phase in 2059 ms >>
+[Sep/19 12:10:37] Generator - << Done CPSPhaseApplicationAllocation phase in 7544 ms >>
+[Sep/19 12:10:42] Generator - << Done CPSPhaseActionStatisticsBasedGeneration phase in 5249 ms >>
+[Sep/19 12:10:46] CPSStats - ====================================================================
+[Sep/19 12:10:46] CPSStats - = CPS Stats: 
+[Sep/19 12:10:46] CPSStats - =   ApplicationTypes: 1671
+[Sep/19 12:10:46] CPSStats - =   ApplicationInstances: 1671
+[Sep/19 12:10:46] CPSStats - =   HostTypes: 33
+[Sep/19 12:10:46] CPSStats - =   HostInstances: 4800
+[Sep/19 12:10:46] CPSStats - =   States: 2493
+[Sep/19 12:10:46] CPSStats - =   Transitions: 6232
+[Sep/19 12:10:46] CPSStats - =     Send: 3116
+[Sep/19 12:10:46] CPSStats - =     Wait: 3116
+[Sep/19 12:10:46] CPSStats - =     Without action: 0
+[Sep/19 12:10:46] CPSStats - =   Allocated AppInstances: 1671
+[Sep/19 12:10:46] CPSStats - =   Connected HostsInstances: 565248
+[Sep/19 12:10:46] CPSStats - =   EObjects: 17731
+[Sep/19 12:10:46] CPSStats - =   EReferences: 595055
+[Sep/19 12:10:46] CPSStats - =   Duplicate AppInstance IDs: 0
+[Sep/19 12:10:46] CPSStats - ====================================================================
+[Sep/19 12:10:46] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedGenerationPhase phase finished:
+	Time: 15095120317 ns
+	Memory: 397167832 bytes
+
+[Sep/19 12:10:46] token - com.incquerylabs.examples.cps.performance.tests.config.phases.InitializationPhase phase started
+[Sep/19 12:10:48] eiq - Prepared queries on engine (1597 ms)
+[Sep/19 12:10:50] token - com.incquerylabs.examples.cps.performance.tests.config.phases.InitializationPhase phase finished:
+	Time: 1597394952 ns
+	Memory: 204932640 bytes
+	AverageMemory: 625942994
+	PeakMemory: 1098838736
+
+[Sep/19 12:10:50] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:50] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:10:51] eiq - >>>Cleared model in: 0 ms
+>>>Host transformation: 62 ms
+>>>Application Instance transformation: 22 ms
+>>>State Machine transformation: 24 ms
+>>>State transformation: 35 ms
+>>>Transition transformation: 152 ms
+>>>Trigger transformation: 73 ms
+>>>Other perf: 63 ms
+[Sep/19 12:10:52] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 410775742 ns
+	Memory: 232548720 bytes
+	PeakMemory: 493743112
+	AverageMemory: 365306368
+
+[Sep/19 12:10:52] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:53] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 717829 ns
+	Memory: 232573328 bytes
+
+[Sep/19 12:10:53] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:53] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:10:54] eiq - >>>Cleared model in: 109 ms
+>>>Host transformation: 39 ms
+>>>Application Instance transformation: 15 ms
+>>>State Machine transformation: 11 ms
+>>>State transformation: 23 ms
+>>>Transition transformation: 94 ms
+>>>Trigger transformation: 36 ms
+>>>Other perf: 43 ms
+[Sep/19 12:10:55] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 350245875 ns
+	Memory: 232985520 bytes
+	PeakMemory: 489172880
+	AverageMemory: 392948316
+
+[Sep/19 12:10:55] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:56] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 523513 ns
+	Memory: 232990216 bytes
+
+[Sep/19 12:10:56] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:56] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:10:56] eiq - >>>Cleared model in: 91 ms
+>>>Host transformation: 36 ms
+>>>Application Instance transformation: 14 ms
+>>>State Machine transformation: 9 ms
+>>>State transformation: 20 ms
+>>>Transition transformation: 82 ms
+>>>Trigger transformation: 35 ms
+>>>Other perf: 37 ms
+[Sep/19 12:10:57] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 308990080 ns
+	Memory: 232999544 bytes
+	PeakMemory: 489589728
+	AverageMemory: 393365184
+
+[Sep/19 12:10:57] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:10:58] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 480145 ns
+	Memory: 233005504 bytes
+
+[Sep/19 12:10:58] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:10:58] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:10:59] eiq - >>>Cleared model in: 84 ms
+>>>Host transformation: 35 ms
+>>>Application Instance transformation: 13 ms
+>>>State Machine transformation: 9 ms
+>>>State transformation: 20 ms
+>>>Transition transformation: 79 ms
+>>>Trigger transformation: 33 ms
+>>>Other perf: 36 ms
+[Sep/19 12:11:00] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 291770567 ns
+	Memory: 233534880 bytes
+	AverageMemory: 393380404
+	PeakMemory: 489604880
+
+[Sep/19 12:11:00] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:11:01] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 442731 ns
+	Memory: 233540976 bytes
+
+[Sep/19 12:11:01] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:11:01] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:11:01] eiq - >>>Cleared model in: 87 ms
+>>>Host transformation: 35 ms
+>>>Application Instance transformation: 13 ms
+>>>State Machine transformation: 9 ms
+>>>State transformation: 20 ms
+>>>Transition transformation: 80 ms
+>>>Trigger transformation: 30 ms
+>>>Other perf: 37 ms
+[Sep/19 12:11:02] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 292669953 ns
+	Memory: 233813632 bytes
+	PeakMemory: 490140320
+	AverageMemory: 393915872
+
+[Sep/19 12:11:02] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase started
+[Sep/19 12:11:03] token - com.incquerylabs.examples.cps.performance.tests.config.phases.StatisticsBasedModificationPhase phase finished:
+	Time: 463224 ns
+	Memory: 233819936 bytes
+
+[Sep/19 12:11:03] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase started
+[Sep/19 12:11:03] eiq - Executing transformation on:
+	Cyber-physical system: BatchQueryOnly32_29537512239862682
+[Sep/19 12:11:04] eiq - >>>Cleared model in: 84 ms
+>>>Host transformation: 35 ms
+>>>Application Instance transformation: 13 ms
+>>>State Machine transformation: 9 ms
+>>>State transformation: 19 ms
+>>>Transition transformation: 79 ms
+>>>Trigger transformation: 28 ms
+>>>Other perf: 36 ms
+[Sep/19 12:11:05] token - com.incquerylabs.examples.cps.performance.tests.config.phases.M2MTransformationPhase phase finished:
+	Time: 284554328 ns
+	Memory: 233831720 bytes
+	PeakMemory: 490419264
+	AverageMemory: 394194812
+
+[Sep/19 12:11:05] testrunner - ************ Start instance clean
+[Sep/19 12:11:05] testrunner - ************ Start class clean
+[Sep/19 12:11:06] testrunner - ************ Test finished ************
+[Sep/19 12:11:06] testrunner - ---
+---
+---
+
